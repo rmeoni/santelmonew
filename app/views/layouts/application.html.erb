@@ -1,15 +1,157 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Santelmo</title>
+  <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="icon" href="/images/logo-low.ico">
+  <title>Restaurante San Telmo</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <!--font-->
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    <!--mobile friendly-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--font awesome-->
+      <script src="https://use.fontawesome.com/811422e9bc.js"></script>
+      <!--material icons-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
 
-  <body>
-    <%= yield %>
+  <body id="bs-over">
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v4.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="756034581211786"
+  theme_color="#0084ff"
+  logged_in_greeting="Hola! Como te puedo ayudar?"
+  logged_out_greeting="Hola! Como te puedo ayudar?">
+      </div>
+   <div id="top">
+  </div>
+  <!--for mobile-->
+    <div class="icon-menu pull-left">
+        <i class="material-icons">&#xE5D2;</i>
+      </div>
+   <!-- Mobile Menu -->
+    <div class="menu">
+      <div class="row">
+      <div class="col-md-12 col-xs-12">
+      <div class="icon-close">
+        <i class="material-icons">&#xE5CD;</i>
+      </div>
+      <ul>
+        <li><a href="/menu">Menu</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contacts">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <!--header-->
+      <div class="header">
+        <div class="container">
+            <a href="/"><img class="mobile-logo" src="/images/Logo-low.png" height="150px"/></a>
+
+              <!--desktop nav-->
+            <ul class="nav">
+              <li><a href="/menu">Menu</a></li>
+              <li><a href="/gallery">Gallery</a></li>
+              <li><a href="/"><img src="/images/Logo-low.png" height="150px"/></a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contacts">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+         <!--email icon-->
+          <div class="email-button">
+              <div class="container">
+                <a href="/contacts"><i class="material-icons md-36" id="location">&#xE0BE;</i></a>
+              </div>
+          </div>
+<%= yield %>
+
+<!--footer-->
+    <div class="footer">
+      <ul id="up">
+        <li><a href="#top"><i class="material-icons">&#xE316;</i></a></li>
+      </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-xs-4">
+            <h3>Location</h3>
+            <p>Calle La Union, Isla de Flores, Peten, Guatemala</p>
+          </div>
+          <div class="col-md-4 col-xs-4">
+            <h3>Opening Hours</h3>
+            <p>Monday-Sunday <br> 7 a.m.-11 p.m.</p>
+          </div>
+          <div class="col-md-4 col-xs-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/SanTelmoflores/" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+</a></li>
+              <li><a href="https://www.instagram.com/san_telmo_flores/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+</a></li>
+              <li><a href="https://www.tripadvisor.com/Restaurant_Review-g562625-d4071525-Reviews-San_Telmo_Restaurant-Flores_Peten_Department.html" target="_blank"><i class="fa fa-tripadvisor fa-2x" aria-hidden="true"></i>
+</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="TA_cdsratingsonlynarrow817" class="TA_cdsratingsonlynarrow"><ul id="CaFDukb" class="TA_links oyDYs0eNIAd"><li id="hSClY5eNJ" class="JSxGBoLPdgo"><a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor"/></a></li></ul></div><script src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=817&amp;locationId=4071525&amp;lang=en_US&amp;border=true&amp;shadow=true&amp;backgroundColor=white&amp;display_version=2"></script>
+      </div>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript for bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var main = function() { 
+     /* Push the body and the nav over by 280px over */
+      $('.icon-menu').click(function() {
+        $('.menu').animate({
+          left: "0px"
+        }, 200);
+
+        $('body').animate({
+          left: "280px"
+        }, 200);
+        });
+
+      /* Then push them back */
+        $('.icon-close').click(function() {
+        $('.menu').animate({
+          left: "-280px"
+        }, 200);
+
+        $('body').animate({
+          left: "0px"
+        }, 200);
+        });
+      };
+
+      $(document).ready(main);
+    </script>
   </body>
 </html>

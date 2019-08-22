@@ -1,3 +1,297 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*jumbotron*/
+
+#bs-over #about {
+	height:600px;
+  background-image: url("/images/sunset.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+}
+
+#bs-over #about h1 {
+  color:#fff;
+  font-size:5em;
+  text-transform: uppercase;
+  text-align:center;
+  margin-top:300px;
+}
+
+/*supporting*/
+
+#our-menu {
+  background-image: url("/images/SAM_2362.jpg");
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#our-antiques {
+  background-image: url("/images/SAM_2505.jpg");
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 400px;
+}
+
+#our-inspiration {
+  background-image: url("/images/front.jpg");
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 400px;
+}
+
+#our-friends {
+  background-image: url("/images/friends.jpg");
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 400px;
+}
+
+.supporting .row {
+  padding:80px 40px 80px 40px;
+}
+
+.img-thumbnail {
+  padding:10px;
+}
+
+#bs-over .about .supporting .container {
+  padding: 0;
+  left: 0;
+  right: 0;
+  width: 98%;
+  }
+
+.supporting .col-md-7 p {
+  padding: 20px;
+  font-size:22px;
+  color: #fff;
+  text-shadow:0 3px 4px rgba(0,0,0,.4);
+  background: #000;
+  opacity: 0.8;
+}
+
+.supporting .col-md-7 h1 {
+  font-size: 48px;
+  color: #fff;
+  text-shadow:0 3px 4px rgba(0,0,0,.4);
+}
+
+.hotel h1 {
+  margin: 0px;
+}
+
+.hotel .jumbotron {
+  height: 600px;
+  background-image: url("/images/SAM_2376.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0px;
+}
+
+.hotel .jumbotron h1 {
+  color:#fff;
+  text-shadow: 0px 2px 3px #000;
+  font-size:6em;
+  text-transform: uppercase;
+  text-align:center;
+  margin-top:300px;
+}
+
+.hotel .feature {
+  height: 600px;
+  background-image: url("/images/SAM_2036.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hotel .feature h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4em;
+  text-align: right;
+  text-shadow: 0px 2px 3px #000;
+  padding: 250px 20px 0px 0px;
+}
+
+.hotel .feature-2 {
+  height: 600px;
+  background-image: url("/images/SAM_2217.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} 
+
+.hotel .feature-2 h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4em;
+  text-align: left;
+  text-shadow: 0px 2px 3px #000;
+  padding: 250px 0px 0px 20px; 
+}
+
+.hotel .feature-3 {
+  height: 600px;
+  background-image: url("/images/SAM_2152.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} 
+
+.hotel .feature-3 h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4em;
+  text-align: right;
+  text-shadow: 0px 2px 3px #000;
+  padding: 250px 20px 0px 0px;
+}
+
+.happy .jumbotron {
+  height: 800px;
+  background-image: url("/images/SAM_2517.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0px;
+}
+
+.happy h1 {
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 0px 2px 3px #000;
+  text-align: center;
+  margin-top: 250px;
+}
+
+.happy h3 {
+  text-align: center;
+  font-size: 3em;
+  color: #FF518C;
+  text-shadow: 0px 2px 3px #000;
+}
+
+/* pictures */
+#gallery {
+	height:600px;
+	background-image:url("/images/gallery.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+}
+
+#gallery h1 {
+  color:#fff;
+  font-size:80px;
+  text-transform: uppercase;
+  text-align:center;
+  margin-top:300px;
+  }
+
+/*gallery*/
+.galleria {  
+ padding-top:40px;
+ padding-bottom:40px;
+ background-color: #F8F8F8;
+}
+
+#bs-over .galleria h4 {
+  margin: 20px 0px 40px 0px;  
+}
+
+.galleria img {
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  height: 250px;
+}
+
+.galleria .col-md-4 {
+  padding-bottom:20px;
+}
+
+/* photograph#show */
+
+.photograph {
+  background-color: #FF4081;
+  color: #fff;
+}
+
+#bs-over .app-nav i {
+  color:#dbdbdb;
+  font-size: 32px;
+  margin-top: 200px;
+  padding: 5px;
+  border: 2px solid #dbdbdb;
+  border-radius: 50%;
+  transition: color .3s;
+}
+
+#bs-over .app-nav i:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+#bs-over .app-nav a {
+  color:#fff;
+  text-decoration:none;
+}
+
+#bs-over .photograph h2 {
+  display: inline-block;
+}
+
+#bs-over .photograph p {
+  display: inline-block;
+  float: right;
+}
+
+#bs-over #photo a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 10px 0px 40px 0px;
+}
+
+#photo {
+  margin-top: 40px;
+}
+
+/* menu */
+#bs-over #rest-menu {
+  height:600px;
+  background-image:url("/menu/menu-cover.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+
+ #bs-over #rest-menu h1 {
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 0px 2px 3px #000;
+  text-align: center;
+  margin-top: 250px;
+}
