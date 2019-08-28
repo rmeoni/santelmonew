@@ -294,6 +294,13 @@
   background-repeat: no-repeat;
   margin-bottom: 0;
 }
+  .rest-menu h1 {
+    font-size: 4em;
+  }
+
+  .rest-menu h3 {
+    font-size: 1.5em;
+  }
 
  #bs-over #rest-menu h1 {
   font-size: 5em;
@@ -305,4 +312,5 @@
 
 #price {
   margin-top: 45px;
+  padding-left: 50px;
 }
