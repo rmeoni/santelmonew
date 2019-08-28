@@ -283,6 +283,9 @@
 #bs-over .food-menu {
   background-image: url("/images/fondo-menu.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #bs-over #rest-menu {
