@@ -190,7 +190,7 @@
 /* pictures */
 #gallery {
 	height:600px;
-	background-image:url("/images/gallery.jpg");
+	background-image:url("/images/sunset.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -201,7 +201,6 @@
 #gallery h1 {
   color:#fff;
   font-size:80px;
-  text-transform: uppercase;
   text-align:center;
   margin-top:300px;
   }
@@ -210,7 +209,7 @@
 .galleria {  
  padding-top:40px;
  padding-bottom:40px;
- background-color: #F8F8F8;
+ background-color: #F5F5F5;
 }
 
 #bs-over .galleria h4 {
@@ -218,15 +217,17 @@
 }
 
 .galleria img {
-  border: 2px solid #000;
-  border-radius: 4px;
   padding: 10px;
   width: 100%;
   height: 250px;
 }
 
 .galleria .col-md-4 {
-  padding-bottom:20px;
+  padding-bottom:15px;
+  box-shadow: 0px 1px 2px #9E9E9E;
+  border: 0px solid #fff;
+  background-color: #fff;
+  margin-bottom: 20px;
 }
 
 /* photograph#show */
@@ -278,6 +279,12 @@
 }
 
 /* menu */
+
+#bs-over .food-menu {
+  background-image: url("/images/fondo-menu.jpg");
+  background-size: cover;
+}
+
 #bs-over #rest-menu {
   height:600px;
   background-image:url("/menu/menu-cover.png");
@@ -294,4 +301,8 @@
   text-shadow: 0px 2px 3px #000;
   text-align: center;
   margin-top: 250px;
+}
+
+#price {
+  margin-top: 45px;
 }

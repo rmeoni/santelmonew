@@ -17,6 +17,10 @@ body, html {
 	font-family:"arvo", sans-serif;
 }
 
+h1 {
+	font-family: 'Cookie';
+}
+
 body {
   left: 0;
   margin: 0;
@@ -148,7 +152,7 @@ text-align: center;
 	cursor:pointer;
 	transition: color .3s;
 	-webkit-transition:color .3s;
-	color:#91BE51;
+	color:#F53AB5;
 }
 
 /*email icon*/
@@ -207,7 +211,7 @@ text-align: center;
 /*supporting*/
 #supporting-home {
 	height:300px;
-	background-color:#FF4081;
+	background-color:#F425AD;
 	margin:0px;
 	text-align:center;
 	color:#fff;
@@ -220,7 +224,7 @@ text-align: center;
 	font-size:5em;
 	text-shadow:0 2px 3px rgba(0,0,0,.4);
 	color:#fff;
-	text-transform: uppercase;
+	font-family: 'Cookie';
 
 }
 
@@ -256,7 +260,7 @@ text-align: center;
 /*feature*/
 .feature-1 {
 	height:700px;
-	background-image:url("/images/SAM_2181.jpg");
+	background-image:url("/images/rooftop.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -280,7 +284,7 @@ text-align: center;
 
 .feature-2 {
 	height:700px;
-	background-image:url("/images/pizza.jpg");
+	background-image:url("/menu/menu-cover.png");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -309,7 +313,7 @@ text-align: center;
 
 .feature-3 {
 	height:700px;
-	background-image:url("/images/SAM_2079.jpg");
+	background-image:url("/images/sunset-new.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -334,7 +338,7 @@ text-align: center;
 
 /*footer*/
 .footer {
-	background-color:#00897B;
+	background-color:#40A4A6;
 	color:#fff;
 	padding:30px;
 }

@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <!--bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="icon" href="/images/logo-low.ico">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+   <!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
   <title>Restaurante San Telmo</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+    <!--mobile friendly-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo-low.ico">
     <!--font-->
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet"> 
     <!--mobile friendly-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!--font awesome-->
@@ -92,6 +98,35 @@
           </div>
 <%= yield %>
 
+    <!-- menu movement -->
+    <script type="text/javascript">
+      var main = function() { 
+     /* Push the body and the nav over by 280px over */
+      $('.icon-menu').click(function() {
+        $('.menu').animate({
+          left: "0px"
+        }, 200);
+
+        $('body').animate({
+          left: "280px"
+        }, 200);
+        });
+
+      /* Then push them back */
+        $('.icon-close').click(function() {
+        $('.menu').animate({
+          left: "-280px"
+        }, 200);
+
+        $('body').animate({
+          left: "0px"
+        }, 200);
+        });
+      };
+
+      $(document).ready(main);
+    </script>
+
 <!--footer-->
     <div class="footer">
       <ul id="up">
@@ -122,35 +157,5 @@
         <div id="TA_cdsratingsonlynarrow817" class="TA_cdsratingsonlynarrow"><ul id="CaFDukb" class="TA_links oyDYs0eNIAd"><li id="hSClY5eNJ" class="JSxGBoLPdgo"><a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor"/></a></li></ul></div><script src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=817&amp;locationId=4071525&amp;lang=en_US&amp;border=true&amp;shadow=true&amp;backgroundColor=white&amp;display_version=2"></script>
       </div>
     </div>
-
-    <!-- Latest compiled and minified JavaScript for bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      var main = function() { 
-     /* Push the body and the nav over by 280px over */
-      $('.icon-menu').click(function() {
-        $('.menu').animate({
-          left: "0px"
-        }, 200);
-
-        $('body').animate({
-          left: "280px"
-        }, 200);
-        });
-
-      /* Then push them back */
-        $('.icon-close').click(function() {
-        $('.menu').animate({
-          left: "-280px"
-        }, 200);
-
-        $('body').animate({
-          left: "0px"
-        }, 200);
-        });
-      };
-
-      $(document).ready(main);
-    </script>
   </body>
-</html>
+  </html>
