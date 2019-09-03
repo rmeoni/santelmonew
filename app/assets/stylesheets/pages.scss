@@ -6,7 +6,7 @@
 
 #bs-over #about {
 	height:600px;
-  background-image: url("/images/sunset.jpg");
+  background-image: url("/images/SAM_2217.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -17,7 +17,6 @@
 #bs-over #about h1 {
   color:#fff;
   font-size:5em;
-  text-transform: uppercase;
   text-align:center;
   margin-top:300px;
 }
@@ -316,4 +315,52 @@
 #price {
   margin-top: 45px;
   padding-left: 50px;
+}
+
+/* about */
+
+#bs-over .about {
+ background-color: #F5F5F5;
+}
+
+#bs-over #jumbotron {
+  background-image: url("/images/SAM_2217.jpg");
+    background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  margin-bottom: 0;
+  z-index: -1;
+}
+
+#bs-over .about .col-md-4 {
+  padding:15px;
+  box-shadow: 0px 1px 2px #9E9E9E;
+  border: 0px solid #fff;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+#first-about-image {
+  margin-top: 40px;
+}
+
+/* rooms */
+#bs-over #rooms-jumbo {
+  height: 600px;
+  background-image: url("/images/SAM_2376.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  margin-bottom: 0;
+  z-index: -1;
+}
+
+#bs-over #rooms-jumbo h1 {
+  font-size: 5em;
+  text-shadow: 0px 2px 3px #000;
+  text-align: center;
+  color: #fff;
+  margin-top: 200px;
 }

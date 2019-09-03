@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 get '/' => 'pages#home', as: :root
 get '/gallery' => 'pages#pictures'
 get '/menu' => 'pages#menu'
-
+get '/about' => 'pages#about'
+get '/rooms' => 'pages#rooms'
 
 get "*missing" => redirect("/")
 
