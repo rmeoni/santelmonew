@@ -324,6 +324,10 @@
  background-color: #F5F5F5;
 }
 
+#bs-over .about h1 {
+  font-size: 3.5em;
+}
+
 #bs-over #jumbotron {
   background-image: url("/images/SAM_2217.jpg");
     background-size: cover;
@@ -366,10 +370,18 @@
   margin-top: 200px;
 }
 
-#bs-over .rooms .col-md-4 {
+#bs-over .rooms .col-md-5 {
   padding:15px;
   box-shadow: 0px 1px 2px #9E9E9E;
   border: 0px solid #fff;
   background-color: #fff;
   margin-bottom: 20px;
+}
+
+#bs-over #rooms h3 {
+  text-align: center;
+}
+
+#bs-over #rooms h1 {
+  font-size: 5em;
 }
