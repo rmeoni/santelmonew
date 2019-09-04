@@ -199,6 +199,7 @@
 
 #gallery h1 {
   color:#fff;
+  text-shadow:0 2px 3px rgba(0,0,0,.4);
   font-size:80px;
   text-align:center;
   margin-top:300px;
@@ -363,4 +364,12 @@
   text-align: center;
   color: #fff;
   margin-top: 200px;
+}
+
+#bs-over .rooms .col-md-4 {
+  padding:15px;
+  box-shadow: 0px 1px 2px #9E9E9E;
+  border: 0px solid #fff;
+  background-color: #fff;
+  margin-bottom: 20px;
 }

@@ -199,7 +199,7 @@ text-align: center;
 
 #home {
 	height:600px;
-	background-image:url("/images/SAM_2206.jpg");
+	background-image:url("/images/frente-nuevo.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -210,7 +210,7 @@ text-align: center;
 
 /*supporting*/
 #supporting-home {
-	height:300px;
+	height:230px;
 	background-color:#F425AD;
 	margin:0px;
 	text-align:center;
@@ -260,7 +260,7 @@ text-align: center;
 /*feature*/
 .feature-1 {
 	height:700px;
-	background-image:url("/images/rooftop.jpg");
+	background-image:url("/menu/menu-cover.png");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -284,7 +284,7 @@ text-align: center;
 
 .feature-2 {
 	height:700px;
-	background-image:url("/menu/menu-cover.png");
+	background-image:url("/images/rooftop.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -338,7 +338,7 @@ text-align: center;
 
 .feature-4 {
 	height:700px;
-	background-image:url("/images/SAM_2036.jpg");
+	background-image:url("/images/SAM_2021.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -421,7 +421,12 @@ text-align: center;
 .footer {
 	background-color:#40A4A6;
 	color:#fff;
-	padding:30px;
+	padding:40px 0px 40px 0px;
+}
+
+.footer h3 {
+	font-family: 'Cookie';
+	font-size: 2.5em;
 }
 
 .footer .material-icons {
@@ -515,7 +520,7 @@ text-align: center;
 }
 
 #bs-over .supporting h1 {
-	font-size: 2.5em;
+	font-size: 3em;
 }
 
 .jumbotron, .feature-1, .feature-2, .feature-3, .feature-4, #home, #our-friends, #our-antiques, #our-menu, #our-inspiration  {
@@ -537,6 +542,10 @@ text-align: center;
 
 #contact h1 {
 	font-size: 4.5em;
+}
+
+.galleria .col-md-4  {
+	margin-left: 15px;
 }
 
 .galleria img {
