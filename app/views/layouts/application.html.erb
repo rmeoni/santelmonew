@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-   <!-- Latest compiled and minified JavaScript -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
+ <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="icon" href="/images/logo-low.ico">
   <title>Restaurante San Telmo</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'application', media: 'all' %>
     <!--mobile friendly-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/logo-low.ico">
     <!--font-->
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet"> 
-    <!--mobile friendly-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!--font awesome-->
       <script src="https://use.fontawesome.com/811422e9bc.js"></script>
       <!--material icons-->
@@ -27,6 +22,7 @@
   </head>
 
   <body id="bs-over">
+
     <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>
@@ -93,35 +89,6 @@
           </div>
         </div>
 <%= yield %>
-
-    <!-- menu movement -->
-    <script type="text/javascript">
-      var main = function() { 
-     /* Push the body and the nav over by 280px over */
-      $('.icon-menu').click(function() {
-        $('.menu').animate({
-          left: "0px"
-        }, 200);
-
-        $('body').animate({
-          left: "280px"
-        }, 200);
-        });
-
-      /* Then push them back */
-        $('.icon-close').click(function() {
-        $('.menu').animate({
-          left: "-280px"
-        }, 200);
-
-        $('body').animate({
-          left: "0px"
-        }, 200);
-        });
-      };
-
-      $(document).ready(main);
-    </script>
 <!-- pre foter-->
     <div class="pre-footer">
       <div class="container">
@@ -153,5 +120,39 @@
           </div>
         </div>
     </div>
+    <!-- Latest compiled and minified JavaScript for bootstrap -->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var main = function() { 
+     /* Push the body and the nav over by 280px over */
+      $('.icon-menu').click(function() {
+        $('.menu').animate({
+          left: "0px"
+        }, 200);
+
+        $('body').animate({
+          left: "280px"
+        }, 200);
+        });
+
+      /* Then push them back */
+        $('.icon-close').click(function() {
+        $('.menu').animate({
+          left: "-280px"
+        }, 200);
+
+        $('body').animate({
+          left: "0px"
+        }, 200);
+        });
+      };
+
+      $(document).ready(main);
+    </script>
   </body>
   </html>
