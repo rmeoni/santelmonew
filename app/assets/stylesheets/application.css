@@ -218,6 +218,14 @@ text-align: center;
 	opacity: 0.9;
 }
 
+#supporting-home #mandala {
+	text-align: center;
+	position: center;
+	float: right;
+	z-index: 1;
+	display: none;
+}
+
 #supporting-home h1 {
 	margin:0;
 	padding:40px 0px 10px;
@@ -347,7 +355,7 @@ text-align: center;
 }
 
 .feature-4 h1 {
-	padding:150px 0px 10px;
+	padding:150px 0px 20px;
 	font-size:70px;
 	text-shadow:0 2px 3px rgba(0,0,0,.4);
 	color:#fff;
